@@ -396,6 +396,7 @@
 
 .webstudio-our-team-cards-employee-social-media-list:is(:hover, :focus) {
     background: var(--Pressed-state);
+    cursor: pointer;
 }
 
 /* Our Customers */
