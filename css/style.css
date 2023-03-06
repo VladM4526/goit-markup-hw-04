@@ -31,6 +31,10 @@
 
 .webstudio-header {
     padding: 24px 0;
+}
+
+.webstudio-header-portfolio {
+    padding: 24px 0;
     border: 1px solid var(--Accent);
 }
 
@@ -142,6 +146,9 @@
 /*Effective Solutions for Your Business*/
 
 .webstudio-service {
+    width: 1440px;
+    position: relative;
+    left: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,10 +254,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 24px 100px;
 }
 
 .webstudio-services-item-icon {
-    margin: 24px 100px;
+    height: 64px;
 }
 
 /*Our jobs*/
@@ -358,31 +366,36 @@
 }
 
 .webstudio-our-team-cards-employee-social-media-container {
+    width: 232px;
+    height: 40px;
     display: flex;
     justify-content: center;
+    list-style: none;
+    margin-top: 8px;
 }
 
-.webstudio-our-team-cards-employee-social-media-svg {
-    width: 40px;
-    height: 40px;
-    background: var(--Primary-Brand);
+.webstudio-our-team-cards-employee-social-media-list {
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
+    background: var(--Primary-Brand);
     margin-left: 24px;
 }
 
 .webstudio-our-team-cards-employee-social-media-icon {
-    margin-left: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
 }
 
-.webstudio-our-team-cards-employee-social-media-svg:first-child {
+.webstudio-our-team-cards-employee-social-media-list:first-child {
     margin-left: 0px;
 }
 
 .webstudio-our-team-cards-employee:first-child {
     margin-left: 0px;
+}
+
+.webstudio-our-team-cards-employee-social-media-list:is(:hover, :focus) {
+    background: var(--Pressed-state);
 }
 
 /* Our Customers */
@@ -417,7 +430,8 @@
     margin-left: 24px;
 }
 
-.webstudio-our-customers-list-item {
+.webstudio-our-customers-list-item-icon {
+    height: 46px;
     fill: var(--Subtle-Text);
 }
 
